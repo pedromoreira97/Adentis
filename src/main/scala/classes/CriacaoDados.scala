@@ -26,14 +26,13 @@ class CriacaoDados {
   }
 
   //Item
-  def createItem(): List[Item] = {
+   def createItem(): List[Item] = {
       val produto = createProduct();
       val itens = List[Item]()
 
     //para cada produto cria-se um novo Item porque cada Item tem 1 produto
       produto.foreach(product => {
         val item: Item = new Item(2.5, 2, 1.2, product)
-
          })
     itens
   }
@@ -43,8 +42,9 @@ class CriacaoDados {
   def createOrder(item: Item): List[Order] = {
     val date = LocalDate.of(2022, Month.DECEMBER, 31)
     val order1 = new Order("Pedro", "123456", "Lisboa", 30, date, item)
+    val order2 = new Order("Maria", "000001", "Coimbra", 30, date, item)
 
-    List(order1)
+    List(order1, order2)
   }
 
 
