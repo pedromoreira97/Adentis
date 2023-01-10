@@ -1,10 +1,10 @@
 package classes
 
 class Item (
-             var custo: BigDecimal,
-             var taxaEnvio: BigDecimal,
-             var valorImposto: BigDecimal,
-             var produto: Product
+             val custo: BigDecimal,
+             val taxaEnvio: BigDecimal,
+             val valorImposto: BigDecimal,
+             val produto: Product
            ){
 
   override def toString(): String =
