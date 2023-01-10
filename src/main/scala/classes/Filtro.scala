@@ -2,13 +2,15 @@ package classes
 
 import java.time.Month
 
-  abstract class Filtro {
+  class Filtro {
 
+    val allorders : List[Order]
     val monthInicial : Month
     val monthFinal : Month
 
    def filtrarPorIntervalo (monthInicial: Month, monthFinal: Month) : List[Order] {
 
   }
+
 
 }
